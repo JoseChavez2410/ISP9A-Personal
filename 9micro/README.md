@@ -27,11 +27,11 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
-### Microservicio Usuarios
+### Microservicio Apostadores
 
 ```bash
 
-cd microservice-users
+cd microservice-apostador
 
 npm install
 
@@ -43,53 +43,4 @@ $ npm run start:dev
 
 # production mode
 $ npm run start:prod
-```
-
-### Microservicio Pasajeros
-
-```bash
-
-cd microservice-passengers
-
-npm install
-
-# development
-$ npm run start
-
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
-```
-
-### Microservicio Vuelos
-
-```bash
-
-cd microservice-flights
-
-npm install
-
-# development
-$ npm run start
-
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
-```
-
-## Despligue con Docker
-
-```bash
-# development
-# * Tomar en cuenta que cada proyecto se debe haber corrido npm run build para que exista la carpeta /dist
-# * Docker se desplegara en el puerto 80
-# * la version de la API es v2 ej: http://localhost/v2/auth/signup
-docker-compose -f docker-compose.dev.yml up --build -d
-
-# deploy from Docker hub
-docker-compose -f docker-compose.prod.yml up --build -d
 ```
